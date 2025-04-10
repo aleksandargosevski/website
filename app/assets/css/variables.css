@@ -1,0 +1,16 @@
+:root {
+  /* Spacing */
+  --container-width: 1400px;
+  --outer-margin: 16px;
+  --outer-margin-negative: calc(-1 * var(--outer-margin));
+  --outer-margin-large: 32px;
+  --outer-margin-large-negative: calc(-1 * var(--outer-margin-large));
+
+  /* Transitions */
+  --transition-speed: 0.2s;
+  --transition-easing: ease-in-out;
+  --transition: all var(--transition-speed) var(--transition-easing);
+
+  /* Colors */
+  --c-primary: #000;
+}

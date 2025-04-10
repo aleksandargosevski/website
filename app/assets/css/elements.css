@@ -1,0 +1,38 @@
+:root {
+  interpolate-size: allow-keywords;
+}
+
+html {
+  &.is-locked-until-xlarge {
+    overflow: hidden;
+
+    @media (--xlarge) {
+      overflow: visible;
+    }
+  }
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  font-variation-settings: "slnt" 0;
+  text-underline-offset: 5px;
+}
+
+details {
+  &::details-content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+    transition-behavior: allow-discrete;
+  }
+
+  &[open]::details-content {
+    height: auto;
+  }
+}

@@ -1,0 +1,163 @@
+/**
+ * Global.css v0.0.1
+ *
+ * This file is similar to Normalize.css or Reset.css.
+ * Do not change it if you aren't sure if it's the right place.
+ */
+
+/**
+ * 1. Change the default box-model for easier calculations.
+ */
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+}
+
+/**
+ * 1. Change default font-family to sans-serif.
+ * 2. Prevent adjustments of font size after orientation changes [iOS].
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */ /* stylelint-disable-line */
+}
+
+/**
+ * Remove default margin from body
+ */
+body {
+  margin: 0;
+}
+
+/* Remove default padding from lists  */
+ol,
+ul {
+  padding-left: 0;
+}
+
+/* Remove bullets and and numbers from list items. */
+li {
+  display: block;
+}
+
+/* Fix display for main in IE (and Edge?) */
+main {
+  display: block;
+}
+
+/* Make images responsive and remove bottom margin. */
+img,
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Reset link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Prevent "sub" and "sup" elements from affecting the line height in all browsers. */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/**
+ * 1. Change font properties to "inherit" in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="email"],
+[type="text"],
+[type="number"],
+[type="password"],
+[type="url"],
+[type="tel"],
+button,
+select,
+textarea {
+  margin: 0; /* 2 */
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+button {
+  padding: 0; /* Reset the look of the button (opinionated) */
+  line-height: inherit; /* Inherit line-height */
+  text-transform: none; /*  Remove the inheritance of text transform in Edge, Firefox, and IE. ? */
+  -webkit-font-smoothing: inherit; /* Inherit font-smoothing */
+  cursor: pointer; /* Change default cursor (opinionated) */
+  background: transparent; /* Reset the look of the button (opinionated) */
+  border: 0; /* Reset the look of the button (opinionated) */
+}
+
+[type="checkbox"],
+[type="radio"] {
+  font-size: inherit;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+input {
+  overflow: visible; /* 1 */
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from "fieldset" elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    "fieldset" elements in all browsers.
+ */
+legend {
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  color: inherit; /* 2 */
+  white-space: normal; /* 1 */
+}
+
+/* Remove default borders from iframe in Chrome */
+iframe {
+  border: 0;
+}
+
+/* Remove bottom margin from textarea and inherit line-height */
+textarea {
+  line-height: inherit;
+  vertical-align: top;
+}
+
+:disabled,
+[disabled] {
+  cursor: not-allowed;
+}

@@ -1,0 +1,7 @@
+/* Media Queries */
+@custom-media --xsmall (width >= 375px); /* = iPhone6, iPhone7 (375px) */
+@custom-media --small (width >= 420px); /* > iPhone6 +, iPhone7+ (414px) */
+@custom-media --medium (width >= 768px); /* = iPad (768px) */
+@custom-media --large (width >= 1024px); /* = iPad landscape (1024px) */
+@custom-media --xlarge (width >= 1280px);
+@custom-media --xxlarge (width >= 1380px);

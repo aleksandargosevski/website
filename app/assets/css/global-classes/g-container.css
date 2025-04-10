@@ -1,0 +1,10 @@
+.g-container {
+  width: 100%;
+  max-width: calc(var(--container-width) + 2 * var(--outer-margin-large));
+  padding: 0 var(--outer-margin);
+  margin: 0 auto;
+
+  @media (--large) {
+    padding: 0 var(--outer-margin-large);
+  }
+}

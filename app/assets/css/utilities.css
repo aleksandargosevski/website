@@ -1,0 +1,69 @@
+.u-sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: polygon(0 0, 0 0, 0 0) !important;
+}
+
+.u-ellipsis {
+  display: block !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.u-section-padding {
+  padding-block: 64px !important;
+
+  @media (--medium) {
+    padding-block: 96px !important;
+  }
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-m-0 {
+  margin: 0 !important;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-relative {
+  position: relative !important;
+}
+
+@media (--medium) {
+  .u-md-flex {
+    display: flex !important;
+  }
+
+  .u-md-block {
+    display: block !important;
+  }
+
+  .u-md-hidden {
+    display: none !important;
+  }
+}
+
+@media (--large) {
+  .u-lg-flex {
+    display: flex !important;
+  }
+
+  .u-lg-block {
+    display: block !important;
+  }
+
+  .u-lg-hidden {
+    display: none !important;
+  }
+}
