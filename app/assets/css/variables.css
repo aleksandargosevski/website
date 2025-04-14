@@ -1,6 +1,6 @@
 :root {
   /* Spacing */
-  --container-width: 1400px;
+  --container-width: 1024px;
   --outer-margin: 16px;
   --outer-margin-negative: calc(-1 * var(--outer-margin));
   --outer-margin-large: 32px;
@@ -12,5 +12,9 @@
   --transition: all var(--transition-speed) var(--transition-easing);
 
   /* Colors */
-  --c-primary: #000;
+  --c-primary: black;
+  --c-text: white;
+  --c-accent: #f7c662;
+  --c-gray: rgb(255 255 255 / 67%);
+  --c-thin-gray: rgb(255 255 255 / 10%);
 }

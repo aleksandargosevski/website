@@ -15,10 +15,10 @@ const showError = computed(() => process.env.NODE_ENV !== 'production')
     dir="ltr"
   >
     <Head>
-      <Title>Stranica nije pronađena</Title>
+      <Title>Page not found</Title>
       <Meta
         name="description"
-        content="Stranica koju tražite ne postoji ili je promenila adresu."
+        content="The page you are looking for doesn’t exist or has been moved."
       />
     </Head>
     <div class="g-container">
@@ -29,22 +29,22 @@ const showError = computed(() => process.env.NODE_ENV !== 'production')
         >
           <img
             src="~/assets/images/logo.svg"
-            alt="Aleksandar Goševski Logo"
+            alt="Godacode Logo"
           >
         </NuxtLink>
         <div>
           <h1 class="g-heading2">
-            Stranica nije pronađena
+            Page not found
           </h1>
           <p>
-            Nažalost, ova stranica više ne postoji ili je promenila adresu.
+            The page you are looking for doesn’t exist or has been moved.
           </p>
         </div>
         <NuxtLink
           :to="{ name: 'home' }"
           class="g-button"
         >
-          Povratak na naslovnu stranu
+          Go to Home Page
         </NuxtLink>
 
         <pre v-if="showError">{{ props.error }}</pre>

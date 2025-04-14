@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Bree Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("~/assets/fonts/Bree-Serif-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Caskaydia Cove";
+  font-style: normal;
+  font-weight: 700;
+  src: url("~/assets/fonts/Caskaydia-Cove-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("~/assets/fonts/Open-Sans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("~/assets/fonts/Open-Sans-Bold.woff2") format("woff2");
+}

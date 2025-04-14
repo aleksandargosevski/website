@@ -1,9 +1,19 @@
 .g-heading1 {
+  margin: 0;
+  font-family: "Bree Serif", Georgia, serif;
+  font-size: 48px;
+  line-height: 1.1;
 
+  @media (--medium) {
+    font-size: 64px;
+  }
 }
 
 .g-heading2 {
-
+  margin: 0;
+  font-family: "Caskaydia Cove", "Courier New", monospace;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .g-heading3 {

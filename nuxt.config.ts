@@ -1,5 +1,6 @@
-export default defineNuxtConfig({
+import { definePerson } from 'nuxt-schema-org/schema'
 
+export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/icon',
@@ -8,11 +9,12 @@ export default defineNuxtConfig({
     '@nuxtjs/html-validator',
     '@nuxtjs/seo',
     '@nuxt/eslint',
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
   ],
   devtools: {
     enabled: true,
   },
-
   css: [
     './app/assets/css/global.css',
     './app/assets/css/variables.css',
@@ -21,17 +23,41 @@ export default defineNuxtConfig({
     './app/assets/css/utilities.css',
     './app/assets/css/global-classes/g-container.css',
     './app/assets/css/global-classes/g-heading.css',
+    './app/assets/css/global-classes/g-content.css',
   ],
 
   site: {
-    url: 'aleksandargosevski.com',
+    url: 'www.aleksandargosevski.com',
+    description: 'Exploring the world of web development, programming, devops, tools, design, etc.',
     name: 'Aleksandar Goševski',
     defaultLocale: 'en-US',
   },
 
+  colorMode: {
+    classSuffix: '',
+  },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['scss', 'css', 'html', 'js', 'json', 'md', 'ts', 'vue', 'bash'],
+          theme: {
+            default: 'catppuccin-latte',
+            dark: 'catppuccin-mocha',
+          },
+        },
+      },
+    },
+  },
+
   runtimeConfig: {
     public: {
-      globals: {},
+      globals: {
+        url: 'www.aleksandargosevski.com',
+        description: 'Exploring the world of web development, programming, devops, tools, design, etc.',
+        name: 'Aleksandar Goševski',
+        defaultLocale: 'en-US',
+      },
     },
   },
 
@@ -44,6 +70,11 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-11-01',
+  nitro: {
+    prerender: {
+      routes: ['/rss.xml'],
+    },
+  },
 
   postcss: {
     plugins: {
@@ -82,6 +113,15 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+  feed: {
+    sources: [
+      {
+        path: '/rss.xml', // The route to your feed.
+        type: 'rss2', // Can be: rss2, atom1, json1
+        cacheTime: 60 * 15, // How long should the feed be cached
+      },
+    ],
+  },
 
   htmlValidator: {
     usePrettier: true,
@@ -111,5 +151,17 @@ export default defineNuxtConfig({
       '2xl': 1535,
       '3xl': 2048,
     },
+  },
+  schemaOrg: {
+    identity: definePerson({
+      name: 'Aleksandar Goševski',
+      image: '/aleksandar-gosevski.jpg',
+      description: 'Software engineer',
+      url: 'https://www.aleksandargosevski.com',
+      sameAs: [
+        'https://www.github.com/aleksandargosevski',
+        'https://www.linkedin.com/in/aleksandargosevski',
+      ],
+    }),
   },
 })

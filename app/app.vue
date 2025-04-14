@@ -1,6 +1,6 @@
 <script setup>
 const route = useRoute()
-// const img = useImg()
+const img = useImage()
 const bodyClass = computed(() => `page-${route.name}`)
 
 useHead({
@@ -12,15 +12,13 @@ useHead({
     dir: 'ltr',
   },
   meta: [
-
     { name: 'msapplication-TileColor', content: '#000' },
     { name: 'msapplication-TileImage', content: '/favicon-144x144.png' },
     { name: 'msapplication-config', content: '/browserconfig.xml' },
-    // { property: 'og:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
-    // { name: 'twitter:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
+    { property: 'og:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
+    { name: 'twitter:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
   ],
   link: [
-
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
     { rel: 'apple-touch-icon', sizes: '57x57', href: '/favicon-57x57.png' },
@@ -52,3 +50,11 @@ useHead({
   </main>
   <BaseFooter />
 </template>
+
+<style scoped>
+.main {
+  @media (--medium) {
+    padding-block: 128px 0;
+  }
+}
+</style>

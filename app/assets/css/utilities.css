@@ -24,6 +24,17 @@
   }
 }
 
+.u-highlight {
+  display: inline-block;
+  padding: 0 0.2em;
+  color: white;
+  background: var(--c-accent);
+}
+
+.dark .u-highlight {
+  color: black;
+}
+
 .u-text-center {
   text-align: center !important;
 }
