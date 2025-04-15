@@ -24,10 +24,12 @@ definePageMeta({
       I live in Serbia where I split my time between debugging code and debugging life. My family puts up with my tech obsessions because I occasionally emerge from behind my screens to be somewhat entertaining.
     </p>
 
-    <NuxtImg
+    <NuxtPicture
+      format="avif,webp"
       src="family.jpg"
       class="image"
       alt="Aleksandar Goševski's family"
+      sizes="100vw md:800px"
     />
   </article>
 </template>

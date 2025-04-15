@@ -141,6 +141,10 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: 'cloudflare',
+    cloudflare: {
+      baseURL: 'https://www.aleksandargosevski.com',
+    },
     screens: {
       'xs': 374,
       'sm': 419,
