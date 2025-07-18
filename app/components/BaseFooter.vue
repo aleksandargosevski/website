@@ -46,8 +46,6 @@ footer {
   }
 
   li {
-    padding-right: 8px;
-
     &::after {
       padding-left: 8px;
       content: "•";
@@ -56,6 +54,14 @@ footer {
     &:last-child::after {
       content: "";
     }
+  }
+
+  a::before {
+    display: none;
+  }
+
+  .router-link-active {
+    font-weight: bold;
   }
 }
 
