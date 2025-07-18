@@ -91,8 +91,11 @@ ul {
   button {
     display: flex;
     padding: 4px;
-    color: var(--c-primary);
-    background: var(--c-text);
+    color: var(--c-text);
+
+    &::before {
+      display: none;
+    }
 
     &:hover {
       color: var(--c-accent);
