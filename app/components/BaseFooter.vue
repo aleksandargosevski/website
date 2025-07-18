@@ -56,8 +56,8 @@ footer {
     }
   }
 
-  a::before {
-    display: none;
+  a {
+    background: none;
   }
 
   .router-link-active {

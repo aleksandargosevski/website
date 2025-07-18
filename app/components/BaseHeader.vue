@@ -62,4 +62,12 @@
   display: flex;
   gap: 16px;
 }
+
+a {
+  background: none;
+}
+
+.router-link-active {
+  font-weight: bold;
+}
 </style>

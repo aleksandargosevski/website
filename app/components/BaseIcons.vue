@@ -92,10 +92,8 @@ ul {
     display: flex;
     padding: 4px;
     color: var(--c-text);
-
-    &::before {
-      display: none;
-    }
+    background: none;
+    transition: var(--transition);
 
     &:hover {
       color: var(--c-accent);

@@ -145,29 +145,4 @@
       margin-top: 48px;
     }
   }
-
-  a {
-    position: relative;
-    text-decoration: none;
-
-    &::before {
-      position: absolute;
-      right: 0;
-      bottom: -2.5px;
-      left: 0;
-      height: 1.5px;
-      content: "";
-      background: currentcolor;
-      transition: var(--transition);
-    }
-
-    &:hover,
-    &.router-link-active {
-      text-decoration: none;
-
-      &::before {
-        right: 100%;
-      }
-    }
-  }
 }

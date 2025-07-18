@@ -48,14 +48,7 @@ li {
     font-weight: 400 !important;
     color: var(--c-accent) !important;
     text-decoration: none !important;
-
-    &::before {
-      display: none !important;
-    }
-
-    &:hover {
-      text-decoration: underline !important;
-    }
+    background-image: linear-gradient(var(--c-accent), var(--c-accent));
   }
 
   &::after {

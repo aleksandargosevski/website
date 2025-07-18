@@ -56,28 +56,16 @@ details {
 }
 
 a {
-  position: relative;
+  padding-bottom: 4px;
   color: var(--c-text);
   text-decoration: none;
-  transition: var(--transition);
+  background-image: linear-gradient(var(--c-text), var(--c-text));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  transition: background-size 500ms ease-in-out;
 
-  &::before {
-    position: absolute;
-    right: 0;
-    bottom: -2.5px;
-    left: 0;
-    height: 1.5px;
-    content: "";
-    background: currentcolor;
-    transition: var(--transition);
-  }
-
-  &:hover,
-  &.router-link-active {
-    text-decoration: none;
-
-    &::before {
-      right: 100%;
-    }
+  &:hover {
+    background-size: 0% 2px;
   }
 }
