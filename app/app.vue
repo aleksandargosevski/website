@@ -51,10 +51,35 @@ useHead({
   <BaseFooter />
 </template>
 
-<style scoped>
+<style>
 .main {
   @media (--medium) {
     padding-block: 128px 0;
+  }
+}
+
+/* View transitions */
+::view-transition-old(root) {
+  /* animation-duration: 2s; */
+
+  /* animation-delay: 1s; */
+}
+
+::view-transition-new(root) {
+  animation-name: fade-in-with-scroll;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+}
+
+@keyframes fade-in-with-scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
