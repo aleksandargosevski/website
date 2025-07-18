@@ -8,7 +8,7 @@
       id="hero-heading"
       class="g-heading1"
     >
-      Hello, I'm <mark class="u-highlight">Aleksandar</mark> Goševski.
+      Hello, I'm <span class="u-highlight">Aleksandar</span> Goševski.
     </h1>
     <p class="description">
       I make stuff for the web.
