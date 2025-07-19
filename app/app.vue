@@ -39,6 +39,7 @@ useHead({
 </script>
 
 <template>
+  <BackgroundParticles />
   <BaseSkipToContent />
   <NuxtRouteAnnouncer />
   <BaseHeader />
