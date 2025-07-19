@@ -39,6 +39,7 @@ useHead({
 </script>
 
 <template>
+  <ScrollProgress />
   <BackgroundParticles />
   <BaseSkipToContent />
   <NuxtRouteAnnouncer />
