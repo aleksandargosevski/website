@@ -2,7 +2,7 @@
   <a
     href="#main"
     class="u-sr"
-  >Idi na glavni sadržaj</a>
+  >Skip to main content</a>
 </template>
 
 <style scoped>
