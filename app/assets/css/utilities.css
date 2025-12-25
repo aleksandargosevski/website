@@ -5,7 +5,6 @@
   padding: 0 !important;
   overflow: hidden !important;
   border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
   clip-path: polygon(0 0, 0 0, 0 0) !important;
 }
 

@@ -49,6 +49,7 @@ const getParticleStyle = particle => ({
   width: 100%;
   height: 100%;
   pointer-events: none;
+  view-transition-name: none;
 }
 
 .particle {

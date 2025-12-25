@@ -21,7 +21,6 @@ a {
     width: auto !important;
     height: auto !important;
     padding: 5px !important;
-    clip: auto !important;
     clip-path: none !important;
   }
 }
