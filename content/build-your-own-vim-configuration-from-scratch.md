@@ -15,9 +15,9 @@ If you're getting started with (Neo)vim, you've probably noticed the many ready-
 At its heart, Vim is like a blank canvas - simple and powerful. The beauty of Vim lies in how you can shape it to match exactly how you think and work. When you use someone else's configuration, it's like wearing shoes that were made for someone else's feet - they might look nice, but they probably won't fit you perfectly.
 Vim, at its core, is a simple editor that gains complexity through our customization. **By relying on someone else's preconfigured setup, we forfeit the opportunity to explore and discover what truly works for us.**
 
-Here's a personal example: I used to have fancy status bars at the bottom of my editor because everyone else had them. Later, I realized I rarely looked at them, so I removed them completely. Instead, I created simple keyboard shortcuts to show me important information (like the current git branch) only when I need it. This kind of "aha!" moment only comes when you build things yourself.## Overcoming Common Excuses
+Here's a personal example: I used to have fancy status bars at the bottom of my editor because everyone else had them. Later, I realized I rarely looked at them, so I removed them completely. Instead, I created simple keyboard shortcuts to show me important information (like the current git branch) only when I need it. This kind of "aha!" moment only comes when you build things yourself.
 
-## Common concerns
+## Overcoming Common Excuses
 
 I often hear people say, "But Vim is too complicated!" or "I don't have time to learn all this!" Let's be honest - if you're interested in becoming more productive, investing time in your tools is worth it. It's like learning to touch type - it takes time initially, but pays off enormously in the long run. Plus, there are tons of great resources out there to help you learn, from YouTube tutorials to friendly blog posts and clear documentation.
 
