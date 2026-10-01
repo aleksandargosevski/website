@@ -16,14 +16,14 @@ export default defineNuxtConfig({
     enabled: true,
   },
   css: [
-    './app/assets/css/global.css',
-    './app/assets/css/variables.css',
-    './app/assets/css/elements.css',
-    './app/assets/css/fonts.css',
-    './app/assets/css/utilities.css',
-    './app/assets/css/global-classes/g-container.css',
-    './app/assets/css/global-classes/g-heading.css',
-    './app/assets/css/global-classes/g-content.css',
+    '~/assets/css/global.css',
+    '~/assets/css/variables.css',
+    '~/assets/css/elements.css',
+    '~/assets/css/fonts.css',
+    '~/assets/css/utilities.css',
+    '~/assets/css/global-classes/g-container.css',
+    '~/assets/css/global-classes/g-heading.css',
+    '~/assets/css/global-classes/g-content.css',
   ],
 
   site: {
@@ -59,10 +59,6 @@ export default defineNuxtConfig({
         defaultLocale: 'en-US',
       },
     },
-  },
-
-  future: {
-    compatibilityVersion: 4,
   },
 
   experimental: {
@@ -121,14 +117,7 @@ export default defineNuxtConfig({
   icon: {
     clientBundle: {
       scan: true,
-      includeCustomCollections: true,
     },
-    customCollections: [
-      {
-        prefix: 'aleksandargosevski',
-        dir: './app/assets/icons',
-      },
-    ],
   },
 
   image: {
@@ -146,6 +135,10 @@ export default defineNuxtConfig({
       '2xl': 1535,
       '3xl': 2048,
     },
+  },
+
+  ogImage: {
+    enabled: false,
   },
   schemaOrg: {
     identity: definePerson({

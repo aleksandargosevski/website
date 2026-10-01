@@ -55,6 +55,7 @@ function toggleMode() {
     </li>
     <li class="icon">
       <button
+        type="button"
         aria-label="Toggle color mode"
         @click="toggleMode"
       >
@@ -66,6 +67,7 @@ function toggleMode() {
     </li>
     <li class="icon">
       <button
+        type="button"
         aria-label="Go to top"
         @click="goToTop"
       >
