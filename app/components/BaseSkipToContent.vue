@@ -10,12 +10,12 @@ a {
   z-index: 10000;
   color: black;
   background: white;
-  border: 4px solid black !important;
+  border: 0.25rem solid black !important;
   border-radius: 8px;
 
   &:focus {
     top: 10px !important;
-    left: 10px !important;
+    left: 0.625rem !important;
 
     /* overrides for u-sr class */
     width: auto !important;

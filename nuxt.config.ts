@@ -72,38 +72,6 @@ export default defineNuxtConfig({
     },
   },
 
-  postcss: {
-    plugins: {
-      '@csstools/postcss-global-data': {
-        files: [
-          './app/assets/css/variables-custom-media.css',
-        ],
-      },
-      'postcss-pxtorem': {
-        mediaQuery: true,
-        propList: [
-          '--*',
-          '*width',
-          '*height',
-          'grid-template-*',
-          'font*',
-          'line-height',
-          'letter-spacing',
-          'background*',
-          '*-offset',
-        ],
-      },
-      'postcss-preset-env': {
-        stage: 1,
-        browsers: [
-          '> 1% in US',
-          'last 2 versions',
-          'not dead',
-        ],
-      },
-    },
-  },
-
   eslint: {
     config: {
       stylistic: true,

@@ -23,19 +23,19 @@
 section {
   margin-bottom: 32px;
 
-  @media (--medium) {
+  @media (width >= 768px) {
     margin-bottom: 96px;
   }
 }
 
 .description {
-  margin: 16px 0;
+  margin: 1rem 0;
   font-family: "Caskaydia Cove", "Courier New", monospace;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--c-gray);
 
-  @media (--medium) {
-    font-size: 32px;
+  @media (width >= 768px) {
+    font-size: 2rem;
   }
 }
 </style>

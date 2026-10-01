@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 4px;
+    height: 0.25rem;
     background: var(--c-accent);
     animation: scroll-progress 1.5s linear forwards;
     animation-timeline: scroll();

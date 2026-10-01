@@ -55,7 +55,7 @@ useHead({
 
 <style>
 .main {
-  @media (--medium) {
+  @media (width >= 768px) {
     padding-block: 128px 0;
   }
 }

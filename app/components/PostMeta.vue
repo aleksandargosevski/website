@@ -29,8 +29,8 @@ const props = defineProps({
 
 <style scoped>
 .wrapper {
-  margin: 8px 0;
-  font-size: 14px;
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
   color: var(--c-gray);
 }
 
@@ -53,7 +53,7 @@ li {
 
   &::after {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.3125rem;
     content: "•";
   }
 

@@ -17,11 +17,11 @@
 footer {
   padding: 16px;
   margin-top: auto;
-  font-size: 14px;
+  font-size: 0.875rem;
   background: var(--c-primary);
   border-top: 1px solid var(--c-thin-gray);
 
-  @media (--medium) {
+  @media (width >= 768px) {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -36,7 +36,7 @@ footer {
 .left {
   display: none;
 
-  @media (--medium) {
+  @media (width >= 768px) {
     display: flex;
   }
 
@@ -66,7 +66,7 @@ footer {
 }
 
 .center {
-  @media (--medium) {
+  @media (width >= 768px) {
     text-align: center;
   }
 }
@@ -74,7 +74,7 @@ footer {
 .right {
   display: none;
 
-  @media (--medium) {
+  @media (width >= 768px) {
     display: flex;
     justify-content: flex-end;
   }

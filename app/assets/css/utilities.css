@@ -1,7 +1,7 @@
 .u-sr {
   position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
+  width: 0.0625rem !important;
+  height: 0.0625rem !important;
   padding: 0 !important;
   overflow: hidden !important;
   border: 0 !important;
@@ -18,7 +18,7 @@
 .u-section-padding {
   padding-block: 64px !important;
 
-  @media (--medium) {
+  @media (width >= 768px) {
     padding-block: 96px !important;
   }
 }
@@ -50,7 +50,7 @@
   position: relative !important;
 }
 
-@media (--medium) {
+@media (width >= 768px) {
   .u-md-flex {
     display: flex !important;
   }
@@ -64,7 +64,7 @@
   }
 }
 
-@media (--large) {
+@media (width >= 1024px) {
   .u-lg-flex {
     display: flex !important;
   }

@@ -26,7 +26,7 @@ const props = defineProps({
 
 <style scoped>
 .post {
-  max-width: 600px;
+  max-width: 37.5rem;
   padding-block: 32px 8px;
   border-bottom: 1px solid var(--c-thin-gray);
 

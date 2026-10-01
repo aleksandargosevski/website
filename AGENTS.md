@@ -80,8 +80,14 @@ const route = useRoute()
 - BEM-like modifiers with `--` syntax (e.g., `nav-item--active`)
 
 #### Responsive Design
-- Use custom media queries defined in `variables-custom-media.css`
-- Mobile-first approach with `@media (--medium)` and `@media (--large)`
+- Mobile-first approach with literal range media queries
+- Breakpoints: `375px`, `420px`, `768px` (medium), `1024px` (large), `1280px`, `1380px`
+- Example: `@media (width >= 768px)`
+
+#### Units
+- Plain CSS, no PostCSS plugins: write `rem` directly (`1rem = 16px`)
+- Use `rem` for `font-size`, `width`/`height`, custom properties, `background-size`, `*-offset`
+- Keep `px` for spacing (`margin`, `padding`, `gap`), borders, shadows, and transforms
 
 ### TypeScript & JavaScript
 
@@ -182,10 +188,9 @@ const { data: posts } = await useAsyncData(route.path, () => {
 - Custom rule for kebab-case class patterns
 - BEM-like modifier support with `--`
 
-### PostCSS
-- `postcss-preset-env` for CSS features
-- `postcss-pxtorem` for responsive units
-- Custom media queries from `variables-custom-media.css`
+### Node.js
+- Pinned in `.node-version` (used by Cloudflare Pages and fnm/nvm)
+- Nuxt 4.5 requires Node `^22.19` or `^24.11`
 
 ## Important Notes
 

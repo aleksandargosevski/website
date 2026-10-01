@@ -45,7 +45,7 @@
   border-bottom: 1px solid var(--c-thin-gray);
   transition: var(--transition);
 
-  @media (--medium) {
+  @media (width >= 768px) {
     display: none;
   }
 }

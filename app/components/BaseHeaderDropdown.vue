@@ -100,7 +100,7 @@ function onBlur(e) {
   overflow: hidden;
   transition: grid-template-rows 0.15s ease-out;
 
-  @media (--medium) {
+  @media (width >= 768px) {
     position: absolute;
     top: 100%;
     left: 0;
@@ -120,19 +120,19 @@ function onBlur(e) {
   visibility: hidden;
   min-height: 0;
   padding-inline: 24px;
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: var(--transition);
 
-  @media (--medium) {
+  @media (width >= 768px) {
     padding-inline: 16px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .open & {
     visibility: visible;
     padding-top: 16px;
 
-    @media (--medium) {
+    @media (width >= 768px) {
       padding-block: 16px;
     }
   }

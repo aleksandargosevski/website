@@ -69,7 +69,7 @@ const showError = computed(() => process.env.NODE_ENV !== 'production')
 }
 
 .g-button {
-  max-width: 300px;
+  max-width: 18.75rem;
   margin: auto;
 }
 
@@ -79,7 +79,7 @@ pre {
   overflow-x: auto;
   text-align: left;
   white-space: pre-wrap;
-  border: 1px dashed gray;
+  border: 0.0625rem dashed gray;
   border-radius: 8px;
 }
 </style>
