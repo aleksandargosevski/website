@@ -1,6 +1,6 @@
 ---
 title: Every commit on main should have purpose
-description: My thoughts on why committing incomplete features directly to main branch is a bad practice, even during development. Here's what I learned from working on both large team projects and side projects with friends.
+description: "Why committing unfinished features straight to main is a bad practice, even during development - lessons from team projects and side projects."
 createdAt: 2024-01-15
 tags:
   - git

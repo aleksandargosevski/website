@@ -1,6 +1,6 @@
 ---
 title: Build your own vim configuration from scratch
-description: As the (neo)vim community continues to grow, various preconfigured distros have emerged, making it tempting for people new to vim to opt for these ready-to-use setups. However, I believe this approach is not ideal...
+description: "Preconfigured (neo)vim distros are tempting, but I think building your own config from scratch is worth it. Here's why, and how to start."
 createdAt: 2023-12-21
 tags:
   - vim

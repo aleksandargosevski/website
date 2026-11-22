@@ -1,6 +1,6 @@
 ---
 title: Software for one
-description: In the last few months I built ten small apps and tools that only I really need. When building gets this cheap, writing software for an audience of one starts to make sense - and it changes how I think about the apps I use every day.
+description: "I built ten small apps that only I really need. When building gets this cheap, writing software for an audience of one starts to make sense."
 createdAt: 2026-11-22
 tags:
   - ai

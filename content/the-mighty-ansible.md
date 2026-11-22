@@ -1,6 +1,6 @@
 ---
 title: The Mighty Ansible
-description: I've always been fascinated by automated provisioning tools, but I often found them needlessly complicated. However, my perspective changed completely when I heard about Ansible...
+description: "I always found provisioning tools needlessly complicated - until I tried Ansible. What makes it so simple, and how to get started with it."
 createdAt: 2017-05-02
 tags:
   - ansible

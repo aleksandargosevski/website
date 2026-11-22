@@ -1,6 +1,6 @@
 ---
 title: Finding balance - The art of practical programming
-description: You know what's funny about coding? We all start projects thinking we'll write the most beautiful, perfect code ever. But real life hits, deadlines come up, and sometimes we just need to make things work. Here's my story about learning to be okay with that, and what I discovered while working on an old, messy project that actually taught me something valuable about writing code.
+description: "We all start out wanting perfect code, then deadlines hit. What an old, messy project taught me about making peace with practical programming."
 createdAt: 2018-03-04
 tags:
   - programming

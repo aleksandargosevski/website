@@ -1,6 +1,6 @@
 ---
 title: Code is no longer written for humans
-description: Clean code, style rules and linters existed because people had to read and maintain code. Now that AI agents write most of it, I think what matters is changing - and so is who stands out on a team.
+description: "Clean code and linters existed because people had to read code. Now that AI agents write most of it, what matters is changing - and who stands out."
 createdAt: 2026-08-01
 tags:
   - programming

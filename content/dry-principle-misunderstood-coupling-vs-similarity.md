@@ -1,6 +1,6 @@
 ---
-title: The DRY principle is misunderstood - it's about coupling, not similarity
-description: Most developers think DRY means "don't repeat similar code," but the real principle is about avoiding duplication of knowledge that changes together. Here's why sharing code between similar-looking components often creates more problems than it solves.
+title: DRY is about coupling, not similarity
+description: "DRY isn't about avoiding similar code - it's about not duplicating knowledge that changes together. Why sharing look-alike code often backfires."
 createdAt: 2022-01-19
 tags:
   - programming

@@ -1,6 +1,6 @@
 ---
 title: Spriting with Sass and Compass
-description: As web developers have become more concerned about browser performance a technique called “image spriting” has emerged that is designed to reduce the number of requests made to the server. As it turns out, fewer requests made the server (when there is no significant difference in the combined size of the files delivered) can make a big difference in how fast a page appears to download...
+description: "Image sprites cut the number of requests a page makes. Here's how Compass takes the pain out of creating and maintaining sprites in Sass."
 createdAt: 2014-03-23
 tags:
   - css

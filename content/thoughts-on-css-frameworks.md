@@ -1,6 +1,6 @@
 ---
 title: Thoughts on CSS Frameworks
-description: Developers often use Foundation or Bootstrap without understanding the output of their CSS code. Let me explain my perspective on these frameworks, their flaws, and when it's appropriate to use them...
+description: "Many developers use Bootstrap or Foundation without knowing the CSS they ship. My take on these frameworks, their flaws and when they make sense."
 createdAt: 2014-09-23
 tags:
   - css

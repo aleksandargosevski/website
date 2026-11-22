@@ -1,6 +1,6 @@
 ---
 title: Simplifying Backbone.js view management with Vojvoda
-description: Managing view instances and ensuring proper management can be challenging in Backbone.js. However, this library offers a solution to simplify the process and enhance your development experience.
+description: "Keeping track of view instances in Backbone.js gets messy fast. Vojvoda is a small library I wrote to make managing views simpler."
 createdAt: 2014-02-03
 tags:
   - javascript

@@ -1,6 +1,6 @@
 ---
 title: Creating a fixed and fluid column layout
-description: When it comes to designing a "one column fixed and one column fluid" layout, implementing a solution that is clean, robust, and doesn't rely on hacky techniques can be a challenge...
+description: "How to build a layout with one fixed and one fluid column that is clean, robust and doesn't rely on hacky CSS techniques."
 createdAt: 2014-05-02
 tags:
   - css
