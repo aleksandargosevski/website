@@ -6,16 +6,13 @@ useHead({
   bodyAttrs: {
     class: bodyClass.value,
   },
-  htmlAttrs: {
-    lang: 'en-US',
-    dir: 'ltr',
-  },
   meta: [
     { name: 'msapplication-TileColor', content: '#3a55f6' },
     { name: 'msapplication-TileImage', content: '/favicon-144x144.png' },
     { name: 'msapplication-config', content: '/browserconfig.xml' },
   ],
   link: [
+    { rel: 'alternate', type: 'application/rss+xml', title: 'Aleksandar Goševski', href: '/rss.xml' },
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
     { rel: 'apple-touch-icon', sizes: '57x57', href: '/favicon-57x57.png' },

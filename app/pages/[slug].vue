@@ -38,7 +38,7 @@ useSeoMeta({
   articleTag: post.value.tags,
 })
 
-defineOgImage('BlogCard', {
+const [ogImageUrl] = defineOgImage('BlogCard', {
   title: post.value.title,
   description: post.value.description,
   eyebrow: `#${post.value.tags[0]}`,
@@ -56,12 +56,13 @@ useSchemaOrg({
   'description': `${post.value.description}`,
   'datePublished': `${new Date(post.value.createdAt).toISOString()}`,
   'dateModified': `${new Date(post.value.createdAt).toISOString()}`,
+  'image': ogImageUrl,
   'author': {
-    '@id': 'https://aleksandargosevski.com/#identity',
+    '@id': `${siteConfig.url}/#identity`,
   },
   'url': `${siteConfig.url}${route.path}`,
   'isPartOf': {
-    '@id': 'https://aleksandargosevski.com/#website',
+    '@id': `${siteConfig.url}/#website`,
   },
   'about': post.value.tags.map(tag => ({
     '@type': 'Thing',

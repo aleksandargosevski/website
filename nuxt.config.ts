@@ -22,6 +22,15 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en-US',
+        dir: 'ltr',
+      },
+      title: 'Aleksandar Goševski',
+    },
+  },
   css: [
     '~/assets/css/global.css',
     '~/assets/css/variables.css',
@@ -76,6 +85,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/rss.xml'],
+      autoSubfolderIndex: false,
     },
   },
 
