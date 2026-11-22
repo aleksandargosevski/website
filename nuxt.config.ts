@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
   ],
+
+  $development: {
+    image: {
+      provider: 'none',
+    },
+  },
   devtools: {
     enabled: true,
   },
@@ -21,20 +27,20 @@ export default defineNuxtConfig({
     '~/assets/css/elements.css',
     '~/assets/css/fonts.css',
     '~/assets/css/utilities.css',
-    '~/assets/css/global-classes/g-container.css',
     '~/assets/css/global-classes/g-heading.css',
     '~/assets/css/global-classes/g-content.css',
   ],
 
   site: {
     url: 'www.aleksandargosevski.com',
-    description: 'Exploring the world of web development, programming, devops, tools, design, etc.',
+    description: 'Notes on building things: software, the web, tools and working with AI, by Aleksandar Goševski.',
     name: 'Aleksandar Goševski',
     defaultLocale: 'en-US',
   },
 
   colorMode: {
     classSuffix: '',
+    fallback: 'light',
   },
   content: {
     build: {
@@ -54,7 +60,7 @@ export default defineNuxtConfig({
     public: {
       globals: {
         url: 'www.aleksandargosevski.com',
-        description: 'Exploring the world of web development, programming, devops, tools, design, etc.',
+        description: 'Notes on building things: software, the web, tools and working with AI, by Aleksandar Goševski.',
         name: 'Aleksandar Goševski',
         defaultLocale: 'en-US',
       },
@@ -85,6 +91,40 @@ export default defineNuxtConfig({
   icon: {
     clientBundle: {
       scan: true,
+      icons: [
+        'lucide:arrow-left',
+        'lucide:arrow-right',
+        'lucide:arrow-up-right',
+        'lucide:blocks',
+        'lucide:braces',
+        'lucide:briefcase',
+        'lucide:check',
+        'lucide:chevron-down',
+        'lucide:copy',
+        'lucide:file-text',
+        'lucide:git-commit-horizontal',
+        'lucide:hammer',
+        'lucide:github',
+        'lucide:house',
+        'lucide:layers',
+        'lucide:layout-grid',
+        'lucide:linkedin',
+        'lucide:list',
+        'lucide:map-pin',
+        'lucide:moon',
+        'lucide:palette',
+        'lucide:rss',
+        'lucide:server',
+        'lucide:sparkles',
+        'lucide:square-terminal',
+        'lucide:sun',
+        'lucide:user',
+        'lucide:users',
+        'lucide:zap',
+        'mdi:ansible',
+        'mdi:language-javascript',
+        'mdi:sass',
+      ],
     },
   },
 

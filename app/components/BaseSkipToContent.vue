@@ -1,27 +1,27 @@
 <template>
   <a
     href="#main"
-    class="u-sr"
+    class="skip"
   >Skip to main content</a>
 </template>
 
 <style scoped>
-a {
-  z-index: 10000;
-  color: black;
-  background: white;
-  border: 0.25rem solid black !important;
-  border-radius: 8px;
+.skip {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 18px;
+  font-weight: 800;
+  color: var(--c-accent-ink);
+  text-decoration: none;
+  background: var(--c-accent);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-m);
+  translate: 0 -200%;
 
-  &:focus {
-    top: 10px !important;
-    left: 0.625rem !important;
-
-    /* overrides for u-sr class */
-    width: auto !important;
-    height: auto !important;
-    padding: 5px !important;
-    clip-path: none !important;
+  &:focus-visible {
+    translate: 0;
   }
 }
 </style>

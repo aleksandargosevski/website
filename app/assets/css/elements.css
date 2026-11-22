@@ -3,69 +3,80 @@
 }
 
 html {
-  &.is-locked-until-xlarge {
-    overflow: hidden;
-
-    @media (width >= 1280px) {
-      overflow: visible;
-    }
-  }
-
-  &.light {
-    --c-primary: white;
-    --c-text: black;
-    --c-accent: #e0115f;
-    --c-gray: rgb(0 0 0 / 52%);
-    --c-thin-gray: rgb(0 0 0 / 10%);
-  }
+  scroll-padding-top: 24px;
+  background: var(--c-ground);
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: var(--c-text);
-  background: var(--c-primary);
-
-  @media (width >= 768px) {
-    padding-bottom: 250px;
-  }
+  line-height: 1.6;
+  color: var(--c-ink);
+  background: var(--c-ground);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-* {
-  font-variation-settings: "slnt" 0;
-  text-underline-offset: 0.3125rem;
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
 }
 
-main {
-  flex: 1;
-}
-
-details {
-  &::details-content {
-    height: 0;
-    overflow: hidden;
-    transition: all 0.15s ease-out;
-    transition-behavior: allow-discrete;
-  }
-
-  &[open]::details-content {
-    height: auto;
-  }
+p {
+  text-wrap: pretty;
 }
 
 a {
-  padding-bottom: 4px;
-  color: var(--c-text);
-  text-decoration: none;
-  background-image: linear-gradient(var(--c-text), var(--c-text));
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: 100% 0.125rem;
-  transition: background-size 500ms ease-in-out;
+  text-underline-offset: 0.2em;
+}
 
-  &:hover {
-    background-size: 0% 0.125rem;
+:focus-visible {
+  outline: 0.1875rem solid var(--c-focus);
+  outline-offset: 3px;
+  border-radius: var(--radius-s);
+}
+
+::selection {
+  color: var(--c-ink);
+  background: var(--c-butter);
+}
+
+html.dark ::selection {
+  color: var(--c-ground);
+  background: var(--c-butter-deep);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.22s;
+    animation-timing-function: var(--ease-out);
+  }
+
+  ::view-transition-group(*) {
+    animation-duration: 0.4s;
+    animation-timing-function: var(--ease-out);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }

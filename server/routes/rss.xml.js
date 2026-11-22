@@ -14,7 +14,7 @@ export default defineEventHandler(async (event) => {
     feed_url: `https://${config.url}/rss.xml`,
     link: `https://${config.url}`,
     site_url: `https://${config.url}`,
-    copyright: '2007-2025 Aleksandar Goševski',
+    copyright: `2007-${new Date().getFullYear()} Aleksandar Goševski`,
     language: 'en',
   })
 

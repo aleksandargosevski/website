@@ -12,10 +12,12 @@ useHead({
     dir: 'ltr',
   },
   meta: [
-    { name: 'msapplication-TileColor', content: '#000' },
+    { name: 'msapplication-TileColor', content: '#3a55f6' },
     { name: 'msapplication-TileImage', content: '/favicon-144x144.png' },
     { name: 'msapplication-config', content: '/browserconfig.xml' },
     { property: 'og:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
     { name: 'twitter:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
   ],
   link: [
@@ -39,49 +41,7 @@ useHead({
 </script>
 
 <template>
-  <ScrollProgress />
-  <BackgroundParticles />
   <BaseSkipToContent />
   <NuxtRouteAnnouncer />
-  <BaseHeader />
-  <main
-    id="main"
-    class="main"
-  >
-    <NuxtPage />
-  </main>
-  <BaseFooter />
+  <NuxtPage />
 </template>
-
-<style>
-.main {
-  @media (width >= 768px) {
-    padding-block: 128px 0;
-  }
-}
-
-/* View transitions */
-::view-transition-old(root) {
-  /* animation-duration: 2s; */
-
-  /* animation-delay: 1s; */
-}
-
-::view-transition-new(root) {
-  animation-name: fade-in-with-scroll;
-  animation-duration: 0.3s;
-  animation-delay: 0.3s;
-}
-
-@keyframes fade-in-with-scroll {
-  0% {
-    opacity: 0;
-    transform: translateY(5px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
