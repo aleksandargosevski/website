@@ -4,6 +4,8 @@ definePageMeta({
 })
 
 const { posts, tags } = await usePosts()
+
+useSiteOgImage()
 const siteConfig = useSiteConfig()
 
 useSchemaOrg({

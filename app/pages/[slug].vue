@@ -26,10 +26,25 @@ const pager = computed(() => [
 
 const siteConfig = useSiteConfig()
 
+const publishedAt = new Date(post.value.createdAt).toISOString()
+
 useSeoMeta({
   title: post.value.title,
   description: post.value.description,
+  ogType: 'article',
+  articlePublishedTime: publishedAt,
+  articleModifiedTime: publishedAt,
+  articleAuthor: ['https://www.aleksandargosevski.com/about'],
+  articleTag: post.value.tags,
 })
+
+defineOgImage('BlogCard', {
+  title: post.value.title,
+  description: post.value.description,
+  eyebrow: `#${post.value.tags[0]}`,
+  meta: `${formatDate(post.value.createdAt, { year: 'numeric', month: 'short', day: 'numeric' })} · ${minutes.value} min read`,
+  tone: tone.value,
+}, { alt: post.value.title })
 
 useSchemaOrg({
   '@context': 'https://schema.org/',

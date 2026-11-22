@@ -8,6 +8,8 @@ useSeoMeta({
   description: 'Aleksandar Goševski is a Staff Software Engineer at CarStory (Vroom) who co-runs the software studio Godacode, builds all sorts of things with AI and lives in Serbia.',
 })
 
+useSiteOgImage()
+
 const facts = [
   { tone: 'sky', icon: 'lucide:briefcase', label: 'Day job', value: 'Staff Software Engineer', note: 'CarStory, now part of Vroom' },
   { tone: 'mint', icon: 'lucide:users', label: 'On the side', value: 'Godacode', note: 'A small software studio with friends' },

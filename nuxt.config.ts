@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/fontaine',
+    '@nuxt/fonts',
     '@nuxtjs/html-validator',
     '@nuxtjs/seo',
     '@nuxt/eslint',
@@ -84,6 +85,21 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    providers: {
+      adobe: false,
+      bunny: false,
+      fontshare: false,
+      fontsource: false,
+      google: false,
+      googleicons: false,
+      npm: false,
+    },
+    families: [
+      { name: 'FigtreeOG', provider: 'local', weights: [500, 700, 800], global: true },
+    ],
+  },
+
   htmlValidator: {
     usePrettier: true,
   },
@@ -146,7 +162,11 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    enabled: false,
+    zeroRuntime: true,
+    defaults: {
+      width: 1200,
+      height: 630,
+    },
   },
   schemaOrg: {
     identity: definePerson({

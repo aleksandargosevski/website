@@ -19,6 +19,14 @@ useSeoMeta({
   title: `Articles about ${tag.value}`,
   description: `${countLabel.value} about ${tag.value} by Aleksandar Goševski.`,
 })
+
+defineOgImage('BlogCard', {
+  title: `Articles about ${tag.value}`,
+  description: `Everything I’ve written about ${tag.value}, newest first.`,
+  eyebrow: `#${tag.value}`,
+  meta: countLabel.value,
+  tone: tagTone(tag.value),
+}, { alt: `Articles about ${tag.value} by Aleksandar Goševski` })
 </script>
 
 <template>

@@ -1,6 +1,5 @@
 <script setup>
 const route = useRoute()
-const img = useImage()
 const bodyClass = computed(() => `page-${route.name}`)
 
 useHead({
@@ -15,10 +14,6 @@ useHead({
     { name: 'msapplication-TileColor', content: '#3a55f6' },
     { name: 'msapplication-TileImage', content: '/favicon-144x144.png' },
     { name: 'msapplication-config', content: '/browserconfig.xml' },
-    { property: 'og:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' },
-    { name: 'twitter:image', content: `${img('og-image.jpg', { w: '1200', h: '630' })}` },
   ],
   link: [
     { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
