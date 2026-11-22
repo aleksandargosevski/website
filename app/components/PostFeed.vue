@@ -22,6 +22,7 @@ const years = computed(() => {
       v-for="group in years"
       :key="group.year"
       class="year"
+      data-shortcut-group
       :aria-labelledby="`year-${group.year}`"
     >
       <h2

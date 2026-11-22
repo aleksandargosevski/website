@@ -44,4 +44,7 @@ useHead({
   <BaseSkipToContent />
   <NuxtRouteAnnouncer />
   <NuxtPage />
+  <ClientOnly>
+    <KeyboardShortcuts />
+  </ClientOnly>
 </template>

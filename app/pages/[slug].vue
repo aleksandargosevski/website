@@ -142,6 +142,7 @@ useSchemaOrg({
         v-for="item in pager"
         :key="item.path"
         :to="item.path"
+        :data-shortcut="item.label === 'Newer article' ? 'newer' : 'older'"
         class="pager-card"
         :class="[`tone-${tagTone(item.tags[0])}`, { 'pager-card--next': item.label === 'Newer article' }]"
       >

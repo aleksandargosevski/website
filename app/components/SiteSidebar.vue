@@ -191,6 +191,7 @@ const facts = [
         </div>
       </template>
     </div>
+    <ShortcutsHint class="shortcuts-hint" />
   </header>
 </template>
 
@@ -214,6 +215,10 @@ const facts = [
     position: sticky;
     top: 32px;
   }
+}
+
+.shortcuts-hint {
+  margin: 14px 0 0 22px;
 }
 
 .panel {

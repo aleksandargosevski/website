@@ -39,6 +39,7 @@ const transitionKey = computed(() => slugify(props.post.title))
         <NuxtLink
           :to="post.path"
           class="link"
+          data-shortcut-item
         >
           {{ post.title }}
         </NuxtLink>
